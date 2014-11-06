@@ -1,0 +1,8 @@
+@font-face{
+	font-family : kirvy;
+	src : url(../fonts/kirvy/Kirvy-Regular.woff);
+}
+@font-face{
+	font-family : kirvy-bold;
+	src : url(../fonts/kirvy/Kirvy-Bold.woff);
+}
