@@ -19,15 +19,13 @@
         <div id="header">
             <div id="header-left">
                 <div id="logo">
-                    <img src="res/images/logo.png" />
+                    <img src="res/images/logo1.png" />
                 </div><!--logo-->
             </div><!--header-left-->
             <div id="header-right">
-                <div id="inside-search">
-                    <div class="search">
+                    <div id="inside-search" class="search">
                         <asp:TextBox ID="txtSearch" runat="server" placeholder="Search here"></asp:TextBox><asp:Button ID="btnSearch" runat="server" Text="Go" />
                     </div><!--search-->
-                </div><!--inside-search-->
                 <div id="nav-bar">
 
                 </div><!--nav-bar-->
@@ -37,10 +35,42 @@
     <!--content section of the page-->
     <div class="wrapper">   
         <div id="left-pane">
-            <hr class="divider" />
+            <div class="upper-panel">
+                <div class="profile-pic">
+                    <img src="res/images/unknown-member.gif" />
+                </div><!--profile-pic-->
+                <a href="javascript:void(0);" class="user-name">FirstName LastName</a><!--user-name-->
+            </div><!--upper-panel-->
+            <!--<hr class="divider" />-->
+
             <asp:ContentPlaceHolder ID="LeftPaneContentPlaceHolder" runat="server">
 
             </asp:ContentPlaceHolder>
+        
+            <div class="summary">
+                <div id="top">
+                    <div class="seg">
+                        <span>Total</span><br />
+                        <div class="semi-seg" id="seg-1">
+                            <div class="stat" id="tot">00000</div>
+                        </div>
+                    </div>
+                    <div class="seg">
+                        <span>Attended</span><br />
+                        <div class="semi-seg" id="seg-2">
+                            <div class="stat" id="atndd">0000</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="bottom">
+                    <div class="seg">
+                        <span>Success</span><br />
+                        <div class="semi-seg" id="seg-3">
+                            <div class="stat" id="sccss">00.00%</div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--summary-->
         </div><!--left-pane-->
 
         <div id="right-pane">
@@ -51,8 +81,6 @@
             </div><!--calendar-->
         </div><!--right-pane-->
     </div><!--wrapper-->
-
-    <hr class="divider" />
 
     <!--footer section of the page-->
     <div id="footer">
